@@ -1,66 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+**Deskripsi Aplikasi Masak.In** <br>
+Aplikasi Masak.In adalah platform berbagi resep masakan yang memungkinkan pengguna untuk menemukan dan mengelola berbagai resep. Aplikasi ini memiliki dua jenis pengguna, yaitu user dan admin, dengan peran dan akses yang berbeda.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Fitur dan Alur untuk User
+Akses Awal (Sebelum Login):**
 
-## About Laravel
+Pengguna yang belum memiliki akun hanya dapat mengakses halaman Home, About, dan Contact.
+Pada tahap ini, user dapat menjelajahi informasi umum tentang aplikasi Masak.In, seperti tujuan aplikasi, cara kerja, dan kontak pengembang.
+Jika user ingin mengakses fitur-fitur utama, seperti melihat detail resep atau menambahkan resep, mereka harus mendaftar dan login terlebih dahulu.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Proses Pendaftaran:**
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<ol>Untuk mendaftar, user harus mengisi formulir pendaftaran dengan data berikut:
+    <li>Nama lengkap
+    <li>Alamat email yang valid dan unik
+    <li>Password yang aman
+    <li>Setelah berhasil mendaftar, user dapat langsung login ke dalam aplikasi menggunakan email dan password yang telah didaftarkan.
+</ol>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Akses Setelah Login:**
+<br>
+Setelah login, user akan mendapatkan akses penuh ke berbagai fitur utama, di antaranya:
+<ol>
+    <li>Melihat daftar resep: User dapat menjelajahi resep-resep yang telah dibagikan oleh pengguna lain.</li>
+    <li>Menambahkan resep: User dapat membuat dan membagikan resep baru, lengkap dengan judul, deskripsi, bahan-bahan, dan langkah-langkah pembuatan.</li>
+</ol>
 
-## Learning Laravel
+**Fitur dan Tanggung Jawab Admin**
+<br>Manajemen Pengguna:
+<ol>
+    <li>Admin memiliki akses untuk melihat daftar semua user yang telah mendaftar di aplikasi, termasuk detail seperti nama dan alamat email.</li>
+    <li>Admin juga dapat memantau jumlah resep yang dibuat oleh setiap user, sehingga dapat mengevaluasi tingkat partisipasi pengguna di aplikasi.</li>
+</ol>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Manajemen Resep (CRUD):**
+<br>Admin memiliki kendali penuh untuk mengelola semua resep di aplikasi melalui proses CRUD (Create, Read, Update, Delete), yaitu:
+<ol>
+    <li>Create (Membuat Resep): Admin dapat menambahkan resep baru untuk memperkaya koleksi resep yang tersedia.</li>
+    <li>Read (Melihat Resep): Admin dapat melihat semua resep yang diunggah oleh user, baik untuk keperluan moderasi maupun pengelolaan konten.</li>
+    <li>Update (Memperbarui Resep): Jika ada kesalahan atau perlu dilakukan penyesuaian pada resep, admin dapat memperbarui konten resep tersebut.</li>
+    <li>Delete (Menghapus Resep): Admin dapat menghapus resep yang dianggap melanggar aturan atau tidak sesuai dengan standar aplikasi.</li>
+</ol>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
